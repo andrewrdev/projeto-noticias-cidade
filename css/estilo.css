@@ -1,3 +1,4 @@
+/* RESET CSS */
 * {
     margin: 0;
     padding: 0;
@@ -29,6 +30,16 @@ a {
     text-decoration: none;
 }
 
+a:link, a:visited {
+    color: #de003e;
+}
+
+a:hover {
+    color: #b10333;
+}
+
+/* Topo do site */
+
 #container {
     width: 768px;
     margin: 0 auto;
@@ -38,7 +49,7 @@ a {
 #topo {
     height: 150px;
     background: url("../imagens/detalhe-topo.png") no-repeat right top;
-    margin-top: 30px;
+    padding-top: 25px;
 }
 
 .logo {
@@ -77,7 +88,7 @@ a {
     color: #69001d;
 }
 
-/* Configura layout de três colunas */
+/* Conteúdo e layout do site */
 
 #conteudo {
     background: #f5f5f5;
@@ -172,20 +183,72 @@ input[type="submit"] {
     padding: 5px;
 }
 
+/* Formatando imagens */
+
+img.imagem-principal {
+    border: 3px solid #dfdfdf;
+    width: 230px;
+}
+
+.imagem-duas-colunas {
+    width: 100%;
+}
+
+/* Formatando cabeçalhos */
+
+h3 {
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;
+}
+
+.destaque h3 {
+    background-color: #b10333;
+    color: #fff;
+}
+
+.entrevista h3 {
+    background-color: #de003e;
+    color: #000;
+}
+
+/* Formatando lista de notícias */
+
+#lista-noticias li {
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    height: 65px;
+}
+
+#lista-noticias li a img {
+    float: left;
+    margin: 5px;
+}
+
+#lista-noticias li a {
+    color: #000;
+    font-size: 0.9em;
+}
+
+#lista-noticias li h3 {
+    color: #3e7ab9;
+}
+
+#lista-noticias li p {
+    font-size: 0.8em;
+}
+
+#lista-noticias li:hover {
+    background-color: #eee;
+    cursor: pointer;
+}
+
+
+/* Rodapé */
+
 #rodape {
     width: 750px;
     margin: 0 auto;
     color: #fff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
